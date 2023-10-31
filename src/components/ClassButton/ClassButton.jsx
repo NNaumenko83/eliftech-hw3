@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { ButtonText } from "../ButtonText/ButtonText";
+import styles from "./ClassButton.module.scss";
 
 class ClassButton extends Component {
   state = { counter: 0 };
@@ -10,7 +11,11 @@ class ClassButton extends Component {
 
   render() {
     return (
-      <button type="button" onClick={this.clickButtonHandler}>
+      <button
+        className={styles.classButton}
+        type="button"
+        onClick={this.clickButtonHandler}
+      >
         ClassButton click:
         <ButtonText value={this.state.counter} />
       </button>
