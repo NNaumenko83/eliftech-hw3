@@ -1,7 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const ButtonText = ({ value }) => {
+export const ButtonText = ({ value }) => {
   return <p>{value}</p>;
 };
 
-export default ButtonText;
+ButtonText.propTypes = {
+  value: PropTypes.number,
+};

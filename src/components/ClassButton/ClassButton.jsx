@@ -1,5 +1,5 @@
 import { Component } from "react";
-import ButtonText from "../ButtonText/ButtonText";
+import { ButtonText } from "../ButtonText/ButtonText";
 
 class ClassButton extends Component {
   state = { counter: 0 };

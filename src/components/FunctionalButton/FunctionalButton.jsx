@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ButtonText from "../ButtonText/ButtonText";
+import { ButtonText } from "../ButtonText/ButtonText";
 
 const FunctionalButton = () => {
   const [counter, setCounter] = useState(0);
