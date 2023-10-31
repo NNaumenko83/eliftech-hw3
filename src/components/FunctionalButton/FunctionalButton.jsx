@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 const FunctionalButton = () => {
-  return <div></div>;
+  const [counter, setCounter] = useState(0);
+  return (
+    <div>
+      <button type="button" onClick={() => setCounter(counter + 1)}>
+        FunctionalButton click: {counter}
+      </button>
+    </div>
+  );
 };
 
 export default FunctionalButton;

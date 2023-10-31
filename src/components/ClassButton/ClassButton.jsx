@@ -1,12 +1,18 @@
 import { Component } from "react";
 
 class ClassButton extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+  state = { counter: 0 };
+
+  clickButtonHandler = () => {
+    this.setState({ counter: this.state.counter + 1 });
+  };
+
   render() {
-    return <button type="button"></button>;
+    return (
+      <button type="button" onClick={this.clickButtonHandler}>
+        ClassButton click:{this.state.counter}
+      </button>
+    );
   }
 }
 
