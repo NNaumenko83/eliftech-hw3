@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Buttontext from "../ButtonText/Buttontext";
 
 class ClassButton extends Component {
   state = { counter: 0 };
@@ -10,7 +11,8 @@ class ClassButton extends Component {
   render() {
     return (
       <button type="button" onClick={this.clickButtonHandler}>
-        ClassButton click:{this.state.counter}
+        ClassButton click:
+        <Buttontext value={this.state.counter} />
       </button>
     );
   }
