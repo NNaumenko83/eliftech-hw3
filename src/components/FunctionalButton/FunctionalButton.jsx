@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Buttontext from "../ButtonText/Buttontext";
+import ButtonText from "../ButtonText/ButtonText";
 
 const FunctionalButton = () => {
   const [counter, setCounter] = useState(0);
   return (
     <div>
       <button type="button" onClick={() => setCounter(counter + 1)}>
-        FunctionalButton click: <Buttontext value={counter} />
+        FunctionalButton click: <ButtonText value={counter} />
       </button>
     </div>
   );
