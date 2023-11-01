@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { ButtonText } from "../ButtonText/ButtonText";
-import styles from "./ClassButton.module.scss";
+import styles from "./_ClassButton.module.scss";
 
 class ClassButton extends Component {
   state = { counter: 0 };

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import ClassButton from "./components/ClassButton/ClassButton";
 import FunctionalButton from "./components/FunctionalButton/FunctionalButton";
 
