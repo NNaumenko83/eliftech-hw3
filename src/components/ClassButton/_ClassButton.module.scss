@@ -1,5 +1,12 @@
 @import "../../styles/variables.module";
+@import "../../styles//mixins.module";
 
 .classButton {
-  background-color: $blue;
+	@include button($yellow, $blue);
+
+	transition: all 250ms linear;
+
+	&:hover {
+		@include button($blue, $yellow);
+	}
 }

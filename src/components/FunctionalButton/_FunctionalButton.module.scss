@@ -1,5 +1,12 @@
 @import "../../styles/variables.module";
+@import "../../styles//mixins.module";
 
 .functionalButton {
-  background-color: $dark-green;
+	@include button($yellow, $dark-green);
+
+	transition: all 250ms linear;
+
+	&:hover {
+		@include button($dark-green, $yellow);
+	}
 }
