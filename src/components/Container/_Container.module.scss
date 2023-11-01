@@ -1,0 +1,27 @@
+@import "../../styles/variables.module";
+@import "../../styles//mixins.module";
+@import "../../styles//variables.module";
+@import "../../styles/breakpoints.module";
+
+.container {
+	padding: 20px;
+
+	display: flex;
+	justify-content: center;
+
+	gap: 10px;
+	flex-direction: column;
+
+	border: 1px solid $red;
+	border-radius: 20px;
+	background-color: $mobile-bg-color;
+
+	@include respond-to("tablet") {
+		background-color: $tablet-bg-color;
+		flex-direction: row;
+	}
+
+	@include respond-to("desktop") {
+		background-color: $desktop-bg-color;
+	}
+}
